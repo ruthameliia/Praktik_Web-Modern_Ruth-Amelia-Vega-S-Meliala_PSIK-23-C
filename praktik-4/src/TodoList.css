@@ -1,0 +1,120 @@
+.todo-container {
+  background: white;
+  max-width: 450px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.todo-title {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.todo-input {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.todo-input input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.2s;
+}
+
+.todo-input input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.todo-input button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.todo-input button:hover {
+  background-color: #0056b3;
+}
+
+.todo-filters {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.todo-filters button {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #f1f1f1;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.todo-filters button.active,
+.todo-filters button:hover {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.todo-list li {
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.2s;
+}
+
+.todo-list li.completed span {
+  text-decoration: line-through;
+  color: #777;
+}
+
+.todo-list li:hover {
+  background-color: #f1f1f1;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: #ff4d4f;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.delete-btn:hover {
+  color: #d11a2a;
+}
+
+.todo-stats {
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: 20px;
+}
